@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script defer src="{{ url_for('static', filename='scripts.js') }}"></script>
+</head>
+<body>
+    <div class="frame">
+        <div class="title-bar">
+            <input type="text" id="authorInput" value="Anonymous">
+            <h1>Group Chat!</h1>
+        </div>
+
+        <div class="chat-box" id="chatBox">
+            <!-- Messages will be displayed here -->
+        </div>
+
+        <form id="messageForm">
+            <input type="text" id="contentInput" placeholder="Content..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
